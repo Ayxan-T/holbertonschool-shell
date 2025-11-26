@@ -11,7 +11,7 @@ do
 		if [ $hour -ne 13 ]; then 
 			echo "Hour: $hour"
 		fi
-		minute=1
+		minute=0
 	fi
 	minute=$((minute + 1))
 done
