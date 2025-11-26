@@ -8,7 +8,9 @@ do
 	echo "$minute"
 	if [ $minute -eq 59 ]; then
 		hour=$((hour + 1))
-		echo "Hour: $hour"
+		if [ $hour -ne 13 ]; then 
+			echo "Hour: $hour"
+		fi
 		minute=1
 	fi
 	minute=$((minute + 1))
