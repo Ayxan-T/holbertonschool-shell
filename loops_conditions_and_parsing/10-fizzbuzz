@@ -3,17 +3,17 @@
 for i in {1..100}
 do
 	flag=1
-	if [[ $(( i % 3 )) -gt 0 ]]
+	if [[ $(( i % 3 )) -eq 0 ]]
 	then 
 		printf "Fizz"
 		flag=0
 	fi
-	if [[ $(( i % 5)) -gt 0 ]]
+	if [[ $(( i % 5)) -eq 0 ]]
 	then
 		printf "Buzz"
 		flag=0
 	fi
-	if [[ $flag -e 1 ]]
+	if [[ $flag -eq 1 ]]
 	then
 		printf "$i"
 	fi
