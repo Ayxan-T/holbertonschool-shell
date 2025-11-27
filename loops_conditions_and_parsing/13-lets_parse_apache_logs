@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # an apple a day, keeps the doctor broke
 
+awk '{print $1, $9}' apache-access.log
+
