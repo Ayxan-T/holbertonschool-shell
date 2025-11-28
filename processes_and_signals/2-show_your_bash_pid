@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# listing ALL currently running processes in useroriented format
-
+# an apple a day, keeps the doctors broke :p
+# shellcheck disable=SC2009
 ps aux --forest | grep "bash"
