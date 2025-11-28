@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # abcdefg
 
+sudo touch /var/run/myscript.pid
 echo $$ | sudo tee -a /var/run/myscript.pid 
