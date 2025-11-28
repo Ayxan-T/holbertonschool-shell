@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # listing ALL currently running processes in useroriented format
 
-while [ 1 -eq 1 ]
+while true
 do
 	echo "To infinity and beyond"
 	sleep 2
