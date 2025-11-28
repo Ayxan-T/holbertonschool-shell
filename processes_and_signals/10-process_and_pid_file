@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# abcdefg
+
+sudo echo $$ > /var/run/myscript.pid 
