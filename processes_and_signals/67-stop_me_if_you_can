@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# an apple a day keeps the doctors broke ;p
+
+pkill -INT -f "bash ./4-to_infinity_and_beyond"
