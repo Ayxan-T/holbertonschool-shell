@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # listing ALL currently running processes in useroriented format
 
-ps aux
+ps auxH
