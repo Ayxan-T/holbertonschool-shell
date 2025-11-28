@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays current running bash's own pid
+
+pgrep bash
