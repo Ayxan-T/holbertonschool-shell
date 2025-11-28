@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# listing ALL currently running processes in useroriented format
+
+trap 'echo "I am invincible!!!"' SIGTERM
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
