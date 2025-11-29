@@ -11,14 +11,14 @@ function stop_my_process() {
         sudo rm -f /var/run/my_process.pid
 }
 
-if [[ $1 -eq "start" ]]
+if [[ $1 == "start" ]]
 then
 	start_my_process
-elif [[ $1 -eq "stop" ]]
+elif [[ $1 == "stop" ]]
 then
 	stop_my_process
 	echo "manage_my_process stopped"
-elif [[ $1 -eq "restart" ]]
+elif [[ $1 == "restart" ]]
 then
 	stop_my_process
 	start_my_process
