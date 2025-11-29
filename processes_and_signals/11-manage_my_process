@@ -1,9 +1,30 @@
 #!/usr/bin/env bash
 # abcdefg
 
-sudo touch /tmp/my_process
-while true
-do
-	echo 'I am alive!' | sudo tee -a  /tmp/my_process
-	sleep 2
-done
+function start_my_process() {
+	./manage_my_process
+        pgrep ./manage_my_process > /var/run/my_process.pid
+}
+
+function stop_my_process() {
+	pkill -9 ./manage_my_process
+        rm -f /var/run/my_process.pid
+}
+
+if [[ $1 -eq "start" ]]
+then
+	start_my_process
+elif [[ $1 -eq "stop" ]]
+then
+	stop_my_process
+	echo "manage_my_process stopped"
+elif [[ $1 -eq "restart" ]]
+	stop_my_process
+	start_my_process
+	echo "manage_my_process restarted"
+else
+	echo 'Usage: manage_my_process {start|stop|restart}'
+fi
+
+unset -f start_my_process
+unset -f stop_my_process
