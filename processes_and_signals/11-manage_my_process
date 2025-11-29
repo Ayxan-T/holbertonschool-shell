@@ -3,12 +3,12 @@
 
 function start_my_process() {
 	./manage_my_process
-        pgrep ./manage_my_process > /var/run/my_process.pid
+        pgrep './manage_my_process' > sudo tee -a /var/run/my_process.pid
 }
 
 function stop_my_process() {
-	pkill -9 ./manage_my_process
-        rm -f /var/run/my_process.pid
+	pkill -9 './manage_my_process'
+        sudo rm -f /var/run/my_process.pid
 }
 
 if [[ $1 -eq "start" ]]
