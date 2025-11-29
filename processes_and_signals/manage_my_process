@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# abcdefg
+
+su
+touch /temp/my_process
+while true
+do
+	echo 'I am alive!' >> /temp/my_process
+	sleep 2
+done
