@@ -19,6 +19,7 @@ then
 	stop_my_process
 	echo "manage_my_process stopped"
 elif [[ $1 -eq "restart" ]]
+then
 	stop_my_process
 	start_my_process
 	echo "manage_my_process restarted"
