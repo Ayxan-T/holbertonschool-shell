@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# abcdefg
+
+sudo touch /tmp/my_process
+while true
+do
+	echo 'I am alive!' | sudo tee -a  /tmp/my_process
+	sleep 2
+done
