@@ -14,6 +14,7 @@ function stop_my_process() {
 if [[ $1 == "start" ]]
 then
 	start_my_process
+	echo "manage_my_process started"
 elif [[ $1 == "stop" ]]
 then
 	stop_my_process
