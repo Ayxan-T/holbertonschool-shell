@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 # abcdefg
 
-su
-touch /temp/my_process
+sudo touch /tmp/my_process
 while true
 do
-	echo 'I am alive!' >> /temp/my_process
+	echo 'I am alive!' | sudo tee -a  /tmp/my_process
 	sleep 2
 done
